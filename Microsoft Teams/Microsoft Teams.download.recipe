@@ -12,7 +12,7 @@
 	<dict>
 		<key>NAME</key>
 		<string>Microsoft Teams</string>
-		<key>url</key>
+		<key>DOWNLOAD_URL</key>
 		<string>https://statics.teams.cdn.office.net/production-osx/1.6.00.1159/Teams_osx.pkg</string>
 	</dict>
 	<key>MinimumVersion</key>
