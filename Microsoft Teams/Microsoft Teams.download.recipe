@@ -3,34 +3,38 @@
 <plist version="1.0">
 <dict>
 	<key>Comment</key>
-	<string>Created with Recipe Robot v2.2.0 (https://github.com/homebysix/recipe-robot)</string>
+	<string>Stolen from rtrouton</string>
 	<key>Description</key>
 	<string>Downloads the latest version of Microsoft Teams.</string>
 	<key>Identifier</key>
 	<string>com.github.prausch.download.MicrosoftTeams</string>
-	<key>Input</key>
-	<dict>
-		<key>NAME</key>
+    <key>MinimumVersion</key>
+    <string>1.0.0</string>
+    <dict>
+    	<key>NAME</key>
 		<string>Microsoft Teams</string>
-		<key>DOWNLOAD_URL</key>
-		<string>https://statics.teams.cdn.office.net/production-osx/1.6.00.1159/Teams_osx.pkg</string>
-	</dict>
-	<key>MinimumVersion</key>
-	<string>1.0.0</string>
-	<key>Process</key>
-	<array>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>filename</key>
-				<string>%NAME%.pkg</string>
-				<key>url</key>
-				<string>%DOWNLOAD_URL%</string>
-			</dict>
-			<key>Processor</key>
-			<string>URLDownloader</string>
-		</dict>
-		<dict>
+		<key>VENDOR</key>
+		<string>Microsoft</string>
+        <key>SOFTWARETITLE</key>
+        <string>Teams</string>
+        <key>PRODUCTID</key>
+        <string>869428</string>
+        <key>DOWNLOADURL</key>
+        <string>https://go.microsoft.com/fwlink/?linkid=%PRODUCTID%</string>
+    </dict>
+    <key>Process</key>
+    <array>
+    	<dict>
+        	<key>Processor</key>
+            <string>URLDownloader</string>
+            <key>Arguments</key>
+            <dict>
+               <key>url</key>
+               <string>%DOWNLOADURL%</string>
+               <key>filename</key>
+               <string>%VENDOR%_%SOFTWARETITLE%.pkg</string>
+            </dict>
+         </dict>		<dict>
 			<key>Processor</key>
 			<string>EndOfCheckPhase</string>
 		</dict>
