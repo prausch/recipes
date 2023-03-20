@@ -25,7 +25,7 @@
             <key>Arguments</key>
             <dict>
                 <key>re_pattern</key>
-                <string>\/siteassets\/software-support\/kensingtonworks\/(.*?)-\d{4}\/kensingtonworks_(.*?)pkg</string>
+                <string>/siteassets/software-support/kensingtonworks/(.*?)-\d{4}/kensingtonworks_(.*?)pkg</string>
                 <key>result_output_var_name</key>
                 <string>PARSED_URL</string>
                 <key>url</key>
