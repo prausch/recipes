@@ -16,7 +16,7 @@
 		<string>KensingtonWorks</string>
 	</dict>
 	<key>MinimumVersion</key>
-	<string>3.0.0</string>
+	<string>2.0.0</string>
 	<key>Process</key>
 	<array>
         <dict>
